@@ -1,0 +1,250 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.container{
+    padding-top: 70px;
+}
+
+.background-index{
+    margin-top: 10%;
+    background-color: #ffffff66;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.background-index::before {
+    content: "";
+    background-image: url('../img/vegetables1.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+.backg-details::before {
+    content: "";
+    background-image: url('../img/background.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .backg-stats::before {
+    content: "";
+    background-image: url('../img/bowlfruit.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .backg-foods::before {
+    content: "";
+    background-image: url('../img/indexbg.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .backg-diets::before {
+    content: "";
+    background-image: url('../img/diet.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-origin: content-box
+  }
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* ----------FoodIndex --------- */
+
+
+
+.index-page h1 {
+    font-size: 6em;
+}
+
+.index-page header p {
+    font-size: 1.8em;
+}
+
+.modal-row{
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+a {
+    color: inherit
+}
+
+.container > header {
+    margin-bottom: 40px;
+}
+
+.navbar {
+    background-color: #fbfbfb;
+}
+
+/*-------FORM--------*/
+
+.table td img {
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.table td {
+    padding: 0px;
+    border: .5px solid #ccc;
+    background-color: white;
+}
+
+.table p {
+    line-height: 60px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    display: inline-table;
+}
+
+/* ----------BUTTONS--------- */
+
+.btn-dark {
+    color:#2c3034;
+    background-color: white;
+    border: 1px solid #2c3034;
+    margin-bottom: 10px;
+}
+
+.accordion .card .card-header{
+    color:#2c3034;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: .25rem;
+    padding: 0px 50px 0px 50px;
+}
+
+.accordion .card .card-header:hover{
+    color: white;
+    background-color: #2c3034;
+}
+
+.table .btn {
+    float: right;
+    margin: 15px 10px;
+    color: #2c3034;
+    background-color: transparent;
+    border: 1px solid #2c3034
+}
+
+.table .btn:hover{
+    color: white;
+    background-color: #2c3034;
+
+}
+/* ----------FoodDetail--------- */
+
+.food-detail-img {
+    width: 50%;
+}
+
+.nav-tabs {
+    margin-top: 40px;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    margin-bottom: 40px
+}
+
+sup {
+    font-size: 80%;
+    font-weight: 400;
+    color: green;
+    margin: 10px;
+}
+
+.card{
+    border: none;
+    align-items: center;
+}
+
+.card img{
+    object-fit: contain;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+}
+
+/*------------DietCards-------------*/
+
+
+.diet-card{
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center; 
+    align-content: center; 
+    margin-right: 15px; 
+    display: block;
+}
+
+.diet-card img{
+    width: 100px;
+    height: 70px;
+}
