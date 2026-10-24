@@ -7,33 +7,28 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "@nivo/bar": "^0.62.0",
-    "@nivo/pie": "^0.62.0",
-    "@nivo/radar": "^0.62.0",
-    "@testing-library/jest-dom": "^4.2.4",
+    "@nivo/bar": "^0.99.0",
+    "@nivo/pie": "^0.99.0",
+    "@nivo/radar": "^0.99.0",
+    "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
+    "axios": "^1.20.0",
     "bootstrap": "^4.4.1",
-    "gh-pages": "^3.1.0",
-    "react": "^16.12.0",
+    "gh-pages": "^6.3.0",
+    "react": "^16.14.0",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
     "styled-components": "^5.1.1",
     "sweetalert": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "vite --host 127.0.0.1",
     "predeploy": "npm run build && echo reactfooder.online > ./build/CNAME ",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "build": "vite build",
+    "test": "vitest run --passWithNoTests"
   },
   "browserslist": {
     "production": [
@@ -46,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "^22.22.2 || >=24.15.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.7",
+    "@vitejs/plugin-react": "^5.2.0",
+    "vitest": "^5.0.5",
+    "jsdom": "^30.1.3"
   }
 }
